@@ -1,3 +1,4 @@
+<%@ page trimDirectiveWhitespaces="true" %>
 <%@ page import="java.util.Collections" %>
 
 <% if (session.getAttribute("username") == null) { %>

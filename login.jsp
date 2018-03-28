@@ -1,4 +1,4 @@
-<%@ page %>
+<%@ page trimDirectiveWhitespaces="true" %>
 
 <% if (request.getMethod() == "GET") { %>
 <form action="./login.jsp" method="POST">
