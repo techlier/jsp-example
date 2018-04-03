@@ -9,12 +9,8 @@
 <%
    session.setAttribute("username", request.getParameter("username"));
    session.setAttribute("password", request.getParameter("password"));
-
-   session.setAttribute("userid", request.getParameter("userid"));
-   session.setAttribute("cn", request.getParameter("cn"));
-   session.setAttribute("mail", request.getParameter("mail"));
-
-   //response.sendRedirect("./");
-   application.getRequestDispatcher("/index.jsp").forward(request, response);
 %>
+<jsp:forward page="index.jsp">
+  <jsp:param name="message" value="${param.username} (${param.password})" />
+</jsp:forward>
 <% } %>

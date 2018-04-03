@@ -4,7 +4,7 @@
 <% if (session.getAttribute("username") == null) { %>
 <a href="./login.jsp">You must login!</a>
 <% } else { %>
-Welcome: <%= session.getAttribute("username") %> (<%= session.getAttribute("password") %>)
+<%= request.getParameter("message") %>
 <ul>
 <li><a href="./change_password.jsp">Change password</a>
 <li><a href="./logout.jsp">Logout</a>
